@@ -106,6 +106,9 @@ export default function Catalog({ visible }: CatalogProps) {
   const [focusedInput, setFocusedInput] = useState<"web" | "mobile" | null>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [imagePreview, setImagePreview] = useState<ImagePreviewState | null>(null);
+  const scrollPositionRef = useRef(0);
+  const previewHistoryEntryRef = useRef(false);
+  const isImagePreviewOpen = imagePreview !== null;
   const previewTouchStartX = useRef(0);
   const previewTouchStartY = useRef(0);
   const previewSheetRef = useRef<HTMLDivElement | null>(null);
@@ -433,6 +436,15 @@ export default function Catalog({ visible }: CatalogProps) {
     }
 
     const boundedIndex = Math.max(0, Math.min(index, images.length - 1));
+    scrollPositionRef.current = window.scrollY;
+    if (!previewHistoryEntryRef.current) {
+      window.history.pushState(
+        { ...window.history.state, __catalogImagePreview: true },
+        "",
+        window.location.href,
+      );
+      previewHistoryEntryRef.current = true;
+    }
     setImagePreview({ ...payload, index: boundedIndex });
   };
 
@@ -515,7 +527,7 @@ export default function Catalog({ visible }: CatalogProps) {
   // NOTE: initial scroll-to-top is handled by the mount-only effect above.
 
   useEffect(() => {
-    if (!imagePreview) {
+    if (!isImagePreviewOpen) {
       return;
     }
 
@@ -524,7 +536,7 @@ export default function Catalog({ visible }: CatalogProps) {
     const originalPosition = document.body.style.position;
     const originalTop = document.body.style.top;
     const originalWidth = document.body.style.width;
-    const scrollY = typeof window !== "undefined" ? window.scrollY : 0;
+    const scrollY = scrollPositionRef.current;
 
     // Lock background scrolling without changing layout: set overflow hidden
     // and keep the page at the same visual position by fixing top.
@@ -532,6 +544,45 @@ export default function Catalog({ visible }: CatalogProps) {
     document.body.style.position = "fixed";
     document.body.style.top = `-${scrollY}px`;
     document.body.style.width = "100%";
+
+    const onPopState = () => {
+      if (!previewHistoryEntryRef.current) {
+        return;
+      }
+
+      previewHistoryEntryRef.current = false;
+      setImagePreview(null);
+    };
+
+    window.addEventListener("popstate", onPopState);
+
+    return () => {
+      window.removeEventListener("popstate", onPopState);
+
+      if (previewHistoryEntryRef.current) {
+        previewHistoryEntryRef.current = false;
+        window.history.back();
+      }
+
+      // Restore body styles
+      document.body.style.overflow = originalOverflow;
+      document.body.style.position = originalPosition;
+      document.body.style.top = originalTop;
+      document.body.style.width = originalWidth;
+
+      window.requestAnimationFrame(() => {
+        window.scrollTo({
+          top: scrollPositionRef.current,
+          behavior: "auto",
+        });
+      });
+    };
+  }, [isImagePreviewOpen]);
+
+  useEffect(() => {
+    if (!imagePreview) {
+      return;
+    }
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -552,19 +603,6 @@ export default function Catalog({ visible }: CatalogProps) {
     window.addEventListener("keydown", onKeyDown);
 
     return () => {
-      // Restore body styles
-      document.body.style.overflow = originalOverflow;
-      document.body.style.position = originalPosition;
-      document.body.style.top = originalTop;
-      document.body.style.width = originalWidth;
-
-      // Restore scroll position
-      if (typeof window !== "undefined") {
-        const top = document.body.style.top;
-        const restored = top ? -parseInt(top || "0", 10) : 0;
-        window.scrollTo(0, restored || 0);
-      }
-
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [imagePreview]);
@@ -964,4 +1002,3 @@ export default function Catalog({ visible }: CatalogProps) {
     </>
   );
 }
-
