@@ -170,7 +170,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1001",
+    sku: "COM-1001",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -221,7 +221,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1002",
+    sku: "GIS-1002",
     menuAssignments: [
       {
         groupId: "girasoles",
@@ -272,7 +272,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1003",
+    sku: "GIS-1003",
     menuAssignments: [
       {
         groupId: "girasoles",
@@ -323,7 +323,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1004",
+    sku: "COM-1004",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -374,7 +374,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1005",
+    sku: "COR-1005",
     menuAssignments: [
       {
         groupId: "corazones",
@@ -426,7 +426,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1031",
+    sku: "COR-1031",
     menuAssignments: [
       {
         groupId: "corazones",
@@ -477,7 +477,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1006",
+    sku: "GER-1006",
     menuAssignments: [
       {
         groupId: "gerberas",
@@ -528,7 +528,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1007",
+    sku: "COM-1007",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -579,7 +579,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1008",
+    sku: "COM-1008",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -630,7 +630,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1009",
+    sku: "GER-1009",
     menuAssignments: [
       {
         groupId: "gerberas",
@@ -681,7 +681,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1010",
+    sku: "ROS-1010",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -732,7 +732,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1011",
+    sku: "COM-1011",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -783,7 +783,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1012",
+    sku: "ROS-1012",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -835,7 +835,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1016",
+    sku: "GER-1016",
     menuAssignments: [
       {
         groupId: "gerberas",
@@ -886,7 +886,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1017",
+    sku: "COR-1017",
     menuAssignments: [
       {
         groupId: "corazones",
@@ -937,7 +937,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1018",
+    sku: "GER-1018",
     menuAssignments: [
       {
         groupId: "gerberas",
@@ -989,7 +989,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1020",
+    sku: "COM-1020",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -1040,7 +1040,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1021",
+    sku: "COM-1021",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -1091,7 +1091,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1022",
+    sku: "GER-1022",
     menuAssignments: [
       {
         groupId: "gerberas",
@@ -1142,7 +1142,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1023",
+    sku: "ROS-1023",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1193,7 +1193,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1024",
+    sku: "ROS-1024",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1244,7 +1244,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1025",
+    sku: "COM-1025",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -1295,7 +1295,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1026",
+    sku: "COM-1026",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -1346,7 +1346,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1027",
+    sku: "ROS-1027",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1397,7 +1397,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1048",
+    sku: "GER-1048",
     menuAssignments: [
       {
         groupId: "gerberas",
@@ -1448,7 +1448,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1028",
+    sku: "ROS-1028",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1500,7 +1500,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1049",
+    sku: "ROS-1049",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1552,7 +1552,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1029",
+    sku: "ROS-1029",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1604,7 +1604,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1050",
+    sku: "ROS-1050",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1656,7 +1656,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1030",
+    sku: "ROS-1030",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1707,7 +1707,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1032",
+    sku: "COM-1032",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -1758,7 +1758,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1033",
+    sku: "ROS-1033",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1809,7 +1809,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1034",
+    sku: "GER-1034",
     menuAssignments: [
       {
         groupId: "gerberas",
@@ -1860,7 +1860,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1035",
+    sku: "COM-1035",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -1911,7 +1911,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1036",
+    sku: "ROS-1036",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -1962,7 +1962,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1037",
+    sku: "ROS-1037",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -2013,7 +2013,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1038",
+    sku: "ROS-1038",
     menuAssignments: [
       {
         groupId: "rosas",
@@ -2064,7 +2064,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1039",
+    sku: "ROS-1039",
     menuAssignments: [
       {
         groupId: "rosas", 
@@ -2115,7 +2115,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1040",
+    sku: "COM-1040",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -2166,7 +2166,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1041",
+    sku: "GER-1041",
     menuAssignments: [
       {
         groupId: "gerberas",
@@ -2219,7 +2219,7 @@ export const catalogProducts: CatalogProduct[] = [
     colorDots: [],
     badge: "",
     deliveryMessage: "",
-    sku: "VIP-1043",
+    sku: "COM-1043",
     menuAssignments: [
       {
         groupId: "combinados",
@@ -2237,6 +2237,272 @@ export const catalogProducts: CatalogProduct[] = [
 },
   },
 
+  {
+    id: 1051,
+    categoryId: "gerberas",
+    baseTitle: "Ramo Gerbera blanca - azul",
+    subtitle: "",
+    badgeLabel: "",
+    basePriceMxn: 260,
+    defaultImages: [
+      "/images/tenants/cielitodeflores/catalog/cielitodeflores_51.jpg",
+    ],
+    activeSizeOptions: [],
+    productSizes: [
+      {
+        id: "estandar",
+        label: "ESTÁNDAR",
+        priceMxn: 750,
+        subtitle: "",
+      },
+      {
+        id: "premium",
+        label: "PREMIUM",
+        priceMxn: 6500,
+        subtitle: "",
+      },
+      {
+        id: "luxury",
+        label: "LUXURY",
+        priceMxn: 8300,
+        subtitle: "",
+      },
+    ],
+    colorDots: [],
+    badge: "",
+    deliveryMessage: "",
+    sku: "GER-1051",
+    menuAssignments: [
+      {
+        groupId: "gerberas",
+        subcategory: "GERBERAS",
+      },
+    ],
+    ui: {
+  showBadge: true,
+  showDeliveryDate: false,
+  showColorDots: false,
+  showProductSizes: false,
+  showStandard: false,
+  showPremium: false,
+  showLuxury: false,
+},
+  }
+,
+
+
+  {
+    id: 1052,
+    categoryId: "rosas",
+    baseTitle: "Bouquet Rosas Azules",
+    subtitle: "",
+    badgeLabel: "",
+    basePriceMxn: 560,
+    defaultImages: [
+      "/images/tenants/cielitodeflores/catalog/cielitodeflores_52.jpg",
+    ],
+    activeSizeOptions: [],
+    productSizes: [
+      {
+        id: "estandar",
+        label: "ESTÁNDAR",
+        priceMxn: 750,
+        subtitle: "",
+      },
+      {
+        id: "premium",
+        label: "PREMIUM",
+        priceMxn: 6500,
+        subtitle: "",
+      },
+      {
+        id: "luxury",
+        label: "LUXURY",
+        priceMxn: 8300,
+        subtitle: "",
+      },
+    ],
+    colorDots: [],
+    badge: "",
+    deliveryMessage: "",
+    sku: "ROS-1052",
+    menuAssignments: [
+      {
+        groupId: "rosas",
+        subcategory: "ROSAS",
+      },
+    ],
+    ui: {
+  showBadge: true,
+  showDeliveryDate: false,
+  showColorDots: false,
+  showProductSizes: false,
+  showStandard: false,
+  showPremium: false,
+  showLuxury: false,
+},
+  }
+
+  ,
+
+
+  {
+    id: 1053,
+    categoryId: "combinados",
+    baseTitle: "Bouquet Rosas Combinados Azules",
+    subtitle: "",
+    badgeLabel: "",
+    basePriceMxn: 400,
+    defaultImages: [
+      "/images/tenants/cielitodeflores/catalog/cielitodeflores_53.jpg",
+    ],
+    activeSizeOptions: [],
+    productSizes: [
+      {
+        id: "estandar",
+        label: "ESTÁNDAR",
+        priceMxn: 750,
+        subtitle: "",
+      },
+      {
+        id: "premium",
+        label: "PREMIUM",
+        priceMxn: 6500,
+        subtitle: "",
+      },
+      {
+        id: "luxury",
+        label: "LUXURY",
+        priceMxn: 8300,
+        subtitle: "",
+      },
+    ],
+    colorDots: [],
+    badge: "",
+    deliveryMessage: "",
+    sku: "COM-1053",
+    menuAssignments: [
+      {
+        groupId: "combinados",
+        subcategory: "COMBINADOS",
+      },
+    ],
+    ui: {
+  showBadge: true,
+  showDeliveryDate: false,
+  showColorDots: false,
+  showProductSizes: false,
+  showStandard: false,
+  showPremium: false,
+  showLuxury: false,
+},
+  },
+
+  
+  {
+    id: 1054,
+    categoryId: "rosas",
+    baseTitle: "Bouquet Rosas -Rojas",
+    subtitle: "",
+    badgeLabel: "",
+    basePriceMxn: 450,
+    defaultImages: [
+      "/images/tenants/cielitodeflores/catalog/cielitodeflores_54.jpg",
+    ],
+    activeSizeOptions: [],
+    productSizes: [
+      {
+        id: "estandar",
+        label: "ESTÁNDAR",
+        priceMxn: 750,
+        subtitle: "",
+      },
+      {
+        id: "premium",
+        label: "PREMIUM",
+        priceMxn: 6500,
+        subtitle: "",
+      },
+      {
+        id: "luxury",
+        label: "LUXURY",
+        priceMxn: 8300,
+        subtitle: "",
+      },
+    ],
+    colorDots: [],
+    badge: "",
+    deliveryMessage: "",
+    sku: "ROS-1054",
+    menuAssignments: [
+      {
+        groupId: "rosas",
+        subcategory: "ROSAS",
+      },
+    ],
+    ui: {
+  showBadge: true,
+  showDeliveryDate: false,
+  showColorDots: false,
+  showProductSizes: false,
+  showStandard: false,
+  showPremium: false,
+  showLuxury: false,
+},
+  },
+
+  
+  {
+    id: 1055,
+    categoryId: "rosas",
+    baseTitle: "Bouquet Rosas Encanto",
+    subtitle: "",
+    badgeLabel: "",
+    basePriceMxn: 400,
+    defaultImages: [
+      "/images/tenants/cielitodeflores/catalog/cielitodeflores_55.jpg",
+    ],
+    activeSizeOptions: [],
+    productSizes: [
+      {
+        id: "estandar",
+        label: "ESTÁNDAR",
+        priceMxn: 750,
+        subtitle: "",
+      },
+      {
+        id: "premium",
+        label: "PREMIUM",
+        priceMxn: 6500,
+        subtitle: "",
+      },
+      {
+        id: "luxury",
+        label: "LUXURY",
+        priceMxn: 8300,
+        subtitle: "",
+      },
+    ],
+    colorDots: [],
+    badge: "",
+    deliveryMessage: "",
+    sku: "ROS-1055",
+    menuAssignments: [
+      {
+        groupId: "rosas",
+        subcategory: "ROSAS",
+      },
+    ],
+    ui: {
+  showBadge: true,
+  showDeliveryDate: false,
+  showColorDots: false,
+  showProductSizes: false,
+  showStandard: false,
+  showPremium: false,
+  showLuxury: false,
+},
+  }
 
   
 ];
