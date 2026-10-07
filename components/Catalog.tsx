@@ -113,6 +113,7 @@ export default function Catalog({ visible }: CatalogProps) {
   const previewTouchStartY = useRef(0);
   const previewSheetRef = useRef<HTMLDivElement | null>(null);
   const previewSizeOptionsRef = useRef<HTMLDivElement | null>(null);
+  const productGridRef = useRef<HTMLDivElement | null>(null);
 
   // Single, authoritative initial scroll-to-top on mount.
   useEffect(() => {
@@ -901,6 +902,19 @@ export default function Catalog({ visible }: CatalogProps) {
         onSelect={(id) => {
           // update existing filter state
           setFilter(id);
+          if (id !== filter) {
+            window.requestAnimationFrame(() => {
+              const productGrid = productGridRef.current;
+              if (!productGrid) {
+                return;
+              }
+
+              window.scrollTo(
+                0,
+                window.scrollY + productGrid.getBoundingClientRect().top,
+              );
+            });
+          }
           // when selecting a top-level category, reset menu subcategory selection to 'Todos'
           const allLabel = catalogCategories.find((c) => c.id === 'all')?.label ?? 'Todos';
           setSelectedMenuSubcategory(allLabel);
@@ -928,7 +942,7 @@ export default function Catalog({ visible }: CatalogProps) {
         <div className="hidden md:block h-5 lg:h-6" />
 
         {/* PRODUCT GRID - VIP large cards: image left, info right on desktop */}
-        <div className="grid grid-cols-1 gap-8 pt-2 md:grid-cols-1 md:pt-6 lg:grid-cols-1">
+        <div ref={productGridRef} className="grid grid-cols-1 gap-8 pt-2 md:grid-cols-1 md:pt-6 lg:grid-cols-1">
           <ProductGrid
             products={safeProducts as any}
             activeImageByCard={activeImageByCard}
