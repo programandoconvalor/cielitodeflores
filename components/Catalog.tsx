@@ -924,22 +924,10 @@ export default function Catalog({ visible }: CatalogProps) {
           }
         }}
       />
-      <div className="border-b border-[#5a4520] bg-white">
-        <div className="mx-auto max-w-[1460px] px-6 py-8 md:px-10 md:py-9">
-        </div>
-      </div>
-
       <div className="mx-auto w-full max-w-[1460px] px-3 md:px-6 lg:px-8">
 
         {/* MOBILE GRID ANCHOR - Scroll target used after external menu selections */}
         <div ref={mobileGridAnchorRef} className="h-0" />
-
-        <div
-          className="hidden md:block"
-          style={{ height: siteData.catalogUi.desktopMenuBottomSpacerHeight }}
-        />
-
-        <div className="hidden md:block h-5 lg:h-6" />
 
         {/* PRODUCT GRID - VIP large cards: image left, info right on desktop */}
         <div ref={productGridRef} className="grid grid-cols-1 gap-8 pt-2 md:grid-cols-1 md:pt-6 lg:grid-cols-1">
