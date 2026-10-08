@@ -915,7 +915,7 @@ export const siteData = {
     bottom: {
       enabled: true,
       showDeveloperLink: true,
-      copyrightPrefix: "Colección VIP",
+      copyrightPrefix: "Colección",
       developerLabel: "Desarrollado por Juan Carlos Zepeda",
       developerContact: {
         enabled: true,
