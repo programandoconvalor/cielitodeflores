@@ -295,7 +295,7 @@ export const catalogProducts: CatalogProduct[] = [
     baseTitle: "Bouquet lirios y gerbera",
     subtitle: "",
     badgeLabel: "",
-    basePriceMxn: 1250,
+    basePriceMxn: 1300,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_4.jpg",
     ],
@@ -1605,6 +1605,58 @@ export const catalogProducts: CatalogProduct[] = [
     badge: "",
     deliveryMessage: "",
     sku: "ROS-1050",
+    menuAssignments: [
+      {
+        groupId: "rosas",
+        subcategory: "ROSAS",
+      },
+    ],
+    ui: {
+      showBadge: true,
+      showDeliveryDate: false,
+      showColorDots: false,
+      showProductSizes: true,
+      showStandard: false,
+      showPremium: false,
+      showLuxury: false,
+    },
+  },
+
+  {
+    id: 1013,
+    categoryId: "rosas",
+    baseTitle: "Bouquet Rosas Vertical",
+    subtitle: "",
+    badgeLabel: "",
+    basePriceMxn: 550,
+    defaultImages: [
+      "/images/tenants/cielitodeflores/catalog/cielitodeflores_13.jpg",
+    ],
+    activeSizeOptions: [],
+    productSizes: [
+      {
+        id: "estandar",
+        label: "ESTÁNDAR",
+        priceMxn: 5700,
+        subtitle: "",
+      },
+      {
+        id: "premium",
+        label: "PREMIUM",
+        priceMxn: 6900,
+        subtitle: "",
+      },
+      {
+        id: "luxury",
+        label: "LUXURY",
+        priceMxn: 8800,
+        subtitle: "",
+      },
+    ],
+    colorDots: [],
+    badge: "",
+    deliveryMessage: "",
+    sku: "ROS-1013",
     menuAssignments: [
       {
         groupId: "rosas",
