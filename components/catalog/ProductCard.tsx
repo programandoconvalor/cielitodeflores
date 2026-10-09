@@ -26,9 +26,6 @@ export default function ProductCard({
   onOpenPreview,
   displayPrice,
 }: Props) {
-  /*
-   * Normal catalog UI configuration.
-   */
   const ui = product.ui;
 
   const showProductSizes = ui.showProductSizes !== false;
@@ -36,15 +33,10 @@ export default function ProductCard({
   const showPremium = ui.showPremium !== false;
   const showLuxury = ui.showLuxury !== false;
 
-  /**
-   * Map product size ids to a known type.
-   */
   const sizeKind = (id: string) => {
     const key = id.toLowerCase();
 
-    if (key.includes("premium")) {
-      return "premium";
-    }
+    if (key.includes("premium")) return "premium";
 
     if (
       key.includes("estandar") ||
@@ -54,42 +46,23 @@ export default function ProductCard({
       return "estandar";
     }
 
-    if (key.includes("luxury") || key.includes("luxe")) {
-      return "luxury";
-    }
+    if (key.includes("luxury") || key.includes("luxe")) return "luxury";
 
     return key;
   };
 
-  /**
-   * Build the visible sizes while preserving
-   * the original productSizes order.
-   */
   const visibleSizes = (product.productSizes ?? []).filter((size) => {
     const kind = sizeKind(size.id);
 
-    if (kind === "premium") {
-      return showPremium;
-    }
-
-    if (kind === "estandar") {
-      return showStandard;
-    }
-
-    if (kind === "luxury") {
-      return showLuxury;
-    }
+    if (kind === "premium") return showPremium;
+    if (kind === "estandar") return showStandard;
+    if (kind === "luxury") return showLuxury;
 
     return showProductSizes;
   });
 
-  /**
-   * Select the initial size.
-   */
   const pickInitial = (): string | undefined => {
-    if (!showProductSizes) {
-      return undefined;
-    }
+    if (!showProductSizes) return undefined;
 
     const findByKind = (kind: string) =>
       visibleSizes.find((size) => sizeKind(size.id) === kind)?.id;
@@ -106,10 +79,6 @@ export default function ProductCard({
     pickInitial(),
   );
 
-  /**
-   * Synchronize selected size when
-   * visibility configuration changes.
-   */
   useEffect(() => {
     const next = pickInitial();
 
@@ -130,9 +99,6 @@ export default function ProductCard({
     ? product.productSizes?.find((size) => size.id === selectedSize)
     : undefined;
 
-  /**
-   * Calculate the price shown on the normal catalog.
-   */
   const priceToShow =
     product.productSizes &&
     product.productSizes.length > 0 &&
@@ -147,74 +113,25 @@ export default function ProductCard({
           ? displayPrice
           : product.basePriceMxn ?? 0;
 
-  /**
-   * Product badge.
-   *
-   * The value comes directly from catalogProducts:
-   * badgeLabel: "EXCLUSIVO"
-   */
-  const showBadge = Boolean(
-    product.badgeLabel || product.badge,
-  );
-
-  const badgeText =
-    product.badgeLabel ||
-    product.badge ||
-    "EXCLUSIVO";
+  const showBadge = Boolean(product.badgeLabel || product.badge);
+  const badgeText = product.badgeLabel || product.badge || "EXCLUSIVO";
 
   return (
     <article
       className="
-        group
-        relative
-        flex
-        min-w-0
-        w-full
-        flex-col
-        overflow-hidden
-        rounded-2xl
-        border
-        border-black/8
-        bg-white
-        shadow-sm
-        transition
-        hover:-translate-y-0.5
-        hover:shadow-md
+        group relative flex min-w-0 w-full flex-col overflow-hidden
+        rounded-2xl border border-black/8 bg-white shadow-sm
+        transition hover:-translate-y-0.5 hover:shadow-md
       "
     >
-      {/* =======================================================
-          PRODUCT BADGE
-          Value comes from product.badgeLabel
-      ======================================================= */}
       {showBadge && (
-        <div
-          className="
-            absolute
-            left-2.5
-            top-2.5
-            z-30
-            sm:left-3
-            sm:top-3
-          "
-        >
+        <div className="absolute left-2.5 top-2.5 z-30 sm:left-3 sm:top-3">
           <div
             className="
-              inline-flex
-              items-center
-              gap-1
-              rounded-full
-              bg-[#FCE7F3]
-              px-2.5
-              py-1
-              text-[8px]
-              font-semibold
-              uppercase
-              tracking-[0.08em]
-              text-[#EC5F8C]
-              shadow-[0_2px_6px_rgba(247,118,155,0.16)]
-              sm:px-3
-              sm:py-1.5
-              sm:text-[10px]
+              inline-flex items-center gap-1 rounded-full bg-[#FCE7F3]
+              px-2.5 py-1 text-[8px] font-semibold uppercase tracking-[0.08em]
+              text-[#EC5F8C] shadow-[0_2px_6px_rgba(247,118,155,0.16)]
+              sm:px-3 sm:py-1.5 sm:text-[10px]
             "
           >
             <svg
@@ -230,16 +147,13 @@ export default function ProductCard({
                 fill="currentColor"
               />
             </svg>
-
             <span>{badgeText}</span>
           </div>
         </div>
       )}
 
-      {/* Product content */}
       <div className="flex min-h-0 flex-1 flex-col">
-        {/* Product image */}
-        <div className="w-full shrink-0">
+        <div className="relative w-full shrink-0">
           <ProductImageCarousel
             images={product.defaultImages}
             sku={product.sku}
@@ -250,59 +164,26 @@ export default function ProductCard({
           />
         </div>
 
-        {/* Product information */}
-        <div
-          className="
-            flex
-            flex-1
-            min-w-0
-            flex-col
-            px-3
-            pb-4
-            pt-2.5
-            md:px-3.5
-          "
-        >
-          {/* Product name */}
+        <div className="flex flex-1 min-w-0 flex-col px-3 pb-4 pt-2.5 md:px-3.5">
           <ProductInfo
             product={product}
-            subtitle={
-              selectedSizeData?.subtitle ?? product.subtitle
-            }
+            subtitle={selectedSizeData?.subtitle ?? product.subtitle}
           />
 
-          {/* Product price */}
           <div className="mt-1">
             <ProductPrice price={priceToShow} />
           </div>
 
-          {/* Product sizes */}
           {showProductSizes && visibleSizes.length > 0 && (
             <div className="mt-3 sm:mt-4">
-              <div
-                className="
-                  mb-2
-                  text-[8px]
-                  font-medium
-                  uppercase
-                  tracking-[0.12em]
-                  text-[#94A3B8]
-                  sm:mb-2.5
-                  sm:text-[10px]
-                "
-              >
+              <div className="mb-2 text-[8px] font-medium uppercase tracking-[0.12em] text-[#94A3B8] sm:mb-2.5 sm:text-[10px]">
                 TAMAÑO
               </div>
 
               <div
                 role="tablist"
                 aria-label="Seleccionar tamaño"
-                className="
-                  grid
-                  grid-cols-3
-                  gap-1.5
-                  sm:gap-2
-                "
+                className="grid grid-cols-3 gap-1.5 sm:gap-2"
               >
                 {visibleSizes.map((size) => {
                   const active = selectedSize === size.id;
@@ -314,33 +195,14 @@ export default function ProductCard({
                       role="tab"
                       aria-selected={active}
                       aria-pressed={active}
-                      onClick={() =>
-                        setSelectedSize(size.id)
-                      }
-                      className="
-                        min-h-[32px]
-                        rounded-full
-                        px-1
-                        text-[8px]
-                        font-medium
-                        uppercase
-                        tracking-[0.04em]
-                        transition-all
-                        duration-200
-                        sm:min-h-[38px]
-                        sm:px-2
-                        sm:text-[10px]
-                      "
+                      onClick={() => setSelectedSize(size.id)}
+                      className="min-h-[32px] rounded-full px-1 text-[8px] font-medium uppercase tracking-[0.04em] transition-all duration-200 sm:min-h-[38px] sm:px-2 sm:text-[10px]"
                       style={{
-                        color: active
-                          ? "#EC5F8C"
-                          : "#64748B",
+                        color: active ? "#EC5F8C" : "#64748B",
                         border: active
                           ? "1.5px solid #F7769B"
                           : "1px solid #E5E7EB",
-                        background: active
-                          ? "#FFF1F5"
-                          : "#FFFFFF",
+                        background: active ? "#FFF1F5" : "#FFFFFF",
                       }}
                     >
                       {size.label}
@@ -351,14 +213,36 @@ export default function ProductCard({
             </div>
           )}
 
-          {/* WhatsApp action */}
-          <div
-            className="
-              mt-auto
-              w-full
-              pt-7
-            "
-          >
+          {/* Product actions: detail button aligned above WhatsApp. */}
+          <div className="mt-auto flex w-full flex-col items-end gap-2 pt-4">
+            <button
+              type="button"
+              onClick={() => onOpenPreview(activeImageIndex)}
+              aria-label={`Ver detalles de ${product.baseTitle}`}
+              title="Ver detalle"
+              className="
+                flex h-8 w-8 items-center justify-center rounded-full
+                bg-[#FF4F93] text-white
+                shadow-[0_3px_9px_rgba(255,79,147,0.35)]
+                transition hover:scale-105 hover:bg-[#ec3b81]
+                active:scale-95 focus-visible:outline-none
+                focus-visible:ring-2 focus-visible:ring-[#FF4F93]
+                focus-visible:ring-offset-2
+              "
+            >
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+              >
+                <path d="M12 5v14M5 12h14" />
+              </svg>
+            </button>
+
             <ProductActions
               sku={product.sku}
               title={product.baseTitle}

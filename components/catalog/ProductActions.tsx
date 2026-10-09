@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from "react";
@@ -28,28 +29,32 @@ export default function ProductActions({
       rel="noreferrer"
       aria-label={`Pedir información sobre ${title}`}
       className="
-        inline-flex
-        h-10
+        flex
+        min-h-10
         w-full
+        min-w-0
         items-center
         justify-center
-        gap-2
+        gap-1.5
         rounded-full
-        whitespace-nowrap
         bg-[#22c55e]
-        px-2.5
+        px-2
+        py-2
         text-center
-        text-[11px]
-        font-semibold
+        text-[10px]
+        font-bold
+        leading-tight
         text-white
-        shadow-[0_6px_14px_rgba(29,200,90,0.35)]
+        shadow-[0_6px_14px_rgba(29,200,90,0.30)]
         transition-colors
         duration-200
         hover:bg-[#16a34a]
         hover:shadow-[0_10px_20px_rgba(29,200,90,0.42)]
         active:scale-[0.99]
-        sm:px-4
-        sm:text-[12px]
+        sm:gap-2
+        sm:px-3
+        sm:text-[11px]
+        md:text-xs
       "
     >
       <img
@@ -58,7 +63,8 @@ export default function ProductActions({
         aria-hidden="true"
         className="h-4 w-4 shrink-0 object-contain"
       />
-      <span className="whitespace-nowrap">
+
+      <span className="min-w-0 whitespace-normal">
         PEDIR POR WHATSAPP
       </span>
     </a>
