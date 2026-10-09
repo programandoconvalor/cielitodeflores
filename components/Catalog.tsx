@@ -43,6 +43,10 @@ type ImagePreviewState = {
   showPrice: boolean;
   showDeliveryDate: boolean;
   deliveryMessage?: string;
+  description?: string;
+  includes?: string[];
+  deliveryZones?: string[];
+  isAvailable?: boolean;
   showColorDots: boolean;
   colorDots: string[];
   sizeOptions: Array<{
@@ -964,6 +968,10 @@ export default function Catalog({ visible }: CatalogProps) {
                 showPrice,
                 showDeliveryDate: ui.ui.showDeliveryDate,
                 deliveryMessage: ui.deliveryMessage,
+                description: ui.description,
+                includes: ui.includes,
+                deliveryZones: ui.deliveryZones,
+                isAvailable: ui.isAvailable,
                 showColorDots: ui.ui.showColorDots,
                 colorDots: ui.colorDots,
                 sizeOptions: ui.activeSizeOptions,
@@ -991,6 +999,30 @@ export default function Catalog({ visible }: CatalogProps) {
                 sku={imagePreview.sku}
                 priceMxn={imagePreview.priceMxn}
                 selectedSizeLabel={imagePreview.selectedOptionLabel}
+                description={imagePreview.description}
+                includes={imagePreview.includes}
+                deliveryZones={imagePreview.deliveryZones}
+                isAvailable={imagePreview.isAvailable}
+                ctaHref={(() => {
+                  if (!imagePreview.isAvailable) {
+                    return undefined;
+                  }
+
+                  const productName = imagePreview.title;
+                  const price = imagePreview.priceMxn;
+                  const imagePath = imagePreview.images[imagePreview.index] ?? "";
+                  const message = [
+                    "Hola, me interesa este arreglo del catálogo:",
+                    "",
+                    `Producto: ${productName}`,
+                    `Precio: $${price.toLocaleString("es-MX")} mxn`,
+                    imagePreview.sku ? `Código: ${imagePreview.sku}` : "",
+                    imagePreview.selectedOptionLabel ? `Variante: ${imagePreview.selectedOptionLabel}` : "",
+                    imagePreview.images.length ? `Imagen: ${siteData.links.publicSiteBaseUrl}${imagePath}` : "",
+                  ].filter(Boolean).join("\n");
+
+                  return `${siteData.links.whatsappCatalogBase}?text=${encodeURIComponent(message)}`;
+                })()}
                 isOpen={true}
                 onClose={() => setImagePreview(null)}
                 onPrev={() => setImagePreviewIndex(Math.max(0, imagePreview.index - 1))}

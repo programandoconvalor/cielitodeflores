@@ -59,7 +59,7 @@ export default function ProductActions({
         className="h-4 w-4 shrink-0 object-contain"
       />
       <span className="whitespace-nowrap">
-        Pedir información
+        PEDIR POR WHATSAPP
       </span>
     </a>
   );
