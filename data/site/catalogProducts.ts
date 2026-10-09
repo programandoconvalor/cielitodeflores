@@ -281,8 +281,6 @@ export const catalogProducts: CatalogProduct[] = [
     defaultImages: [
 
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_1.jpg",
-      "/images/tenants/cielitodeflores/catalog/cielitodeflores_2.jpg",
-      "/images/tenants/cielitodeflores/catalog/cielitodeflores_3.jpg",
 
     ],
 
