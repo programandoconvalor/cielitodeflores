@@ -18959,7 +18959,7 @@ export default function ProductImageLightbox({
 
 
 
-            Cada arreglo se prepara con dedicación. Buscamos lograr el mayor parecido a la imagen del catálogo; los tonos, las flores y los detalles decorativos pueden variar según la disponibilidad.
+            Cada arreglo se prepara con dedicación. Buscamos lograr el mayor parecido a la imagen del catálogo; los tonos de las flores y los detalles decorativos pueden variar según la disponibilidad.
 
 
 
