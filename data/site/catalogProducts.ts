@@ -1367,7 +1367,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet amor pastel: arreglo elaborado con rosas que aportan romanticismo y expresan cariño. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
+    description: "Bouquet amor pastel: arreglo elaborado con gerberas que aportan romanticismo y expresan cariño. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -1597,7 +1597,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Ramo lirios armonía: arreglo elaborado con lirios de presencia elegante que aportan delicadeza al arreglo. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
+    description: "Ramo lirios armonía: arreglo elaborado con lirios y gerberas de presencia elegante que aportan delicadeza al arreglo. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -1712,7 +1712,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Amor incandescente: arreglo elaborado con rosas que aportan romanticismo y expresan cariño. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
+    description: "Amor incandescente: arreglo elaborado con rosas y astromelias que aportan romanticismo y expresan cariño. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -1943,7 +1943,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Corazón rosas princesa: arreglo elaborado con rosas que aportan romanticismo y expresan cariño. Una propuesta floral para demostrar cariño, celebrar logros o convertir un día cotidiano en una ocasión especial.",
+    description: "Corazón rosas princesa: arreglo elaborado con rosas y chocolates ferrero que aportan romanticismo y expresan cariño. Una propuesta floral para demostrar cariño, celebrar logros o convertir un día cotidiano en una ocasión especial.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -2058,7 +2058,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet encanto alegría: arreglo elaborado con flores frescas de colores alegres que iluminan cualquier espacio. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
+    description: "Bouquet encanto alegría: arreglo elaborado con flores de gerberas frescas de colores alegres que iluminan cualquier espacio. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -2289,7 +2289,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet lirios y rosa + globo: arreglo elaborado con lirios de presencia elegante que aportan delicadeza al arreglo. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
+    description: "Bouquet lirios y rosa + globo: arreglo elaborado con lirios de presencia elegante que aportan delicadeza al arreglo y globo con fase personalizada. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -2404,7 +2404,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet Rosas, astromelias y gerbera: arreglo elaborado con gerberas de aspecto fresco y colorido que aportan vitalidad. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
+    description: "Bouquet Rosas, astromelias y gerbera: arreglo elaborado con gerberas y rosas de aspecto fresco y colorido que aportan vitalidad. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -2634,7 +2634,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Lirios princesa: arreglo elaborado con lirios de presencia elegante que aportan delicadeza al arreglo. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
+    description: "Lirios princesa: arreglo elaborado con lirios y rosas de presencia elegante que aportan delicadeza al arreglo. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -3094,7 +3094,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet encuentro amor: arreglo elaborado con rosas que aportan romanticismo y expresan cariño. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
+    description: "Bouquet encuentro amor: arreglo elaborado con rosas y gerberas que aportan romanticismo y expresan cariño. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -3441,7 +3441,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet regalo: arreglo elaborado con una combinación floral armoniosa con una presentación especial. Su estilo lo convierte en un regalo encantador para cumpleaños, aniversarios, celebraciones y momentos espontáneos.",
+    description: "Bouquet regalo: arreglo elaborado con una combinación floral armoniosa de rosas rojas y blancas con una presentación especial. Su estilo lo convierte en un regalo encantador para cumpleaños, aniversarios, celebraciones y momentos espontáneos.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -3789,7 +3789,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet Rosas Lirios: arreglo elaborado con lirios de presencia elegante que aportan delicadeza al arreglo. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
+    description: "Bouquet Rosas Lirios: arreglo elaborado con lirios blancos y rosas rojas de presencia elegante que aportan delicadeza al arreglo. Perfecto para celebrar una fecha especial, compartir buenos deseos o expresar tus sentimientos con un detalle memorable.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -4134,7 +4134,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet Naturaleza: arreglo elaborado con flores frescas de colores alegres que iluminan cualquier espacio. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
+    description: "Bouquet Naturaleza: arreglo elaborado con flores blancas frescas de colores alegres que iluminan cualquier espacio. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -4532,7 +4532,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     categoryId: "rosas",
 
-    baseTitle: "Bouquet Encanto 2",
+    baseTitle: "Bouquet Encanto Para tí",
 
     subtitle: "",
 
@@ -4594,7 +4594,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet Encanto 2: arreglo elaborado con una combinación floral armoniosa con una presentación especial. Su estilo lo convierte en un regalo encantador para cumpleaños, aniversarios, celebraciones y momentos espontáneos.",
+    description: "Bouquet Encanto Para tí: arreglo elaborado con una combinación floral armoniosa con una presentación especial. Su estilo lo convierte en un regalo encantador para cumpleaños, aniversarios, celebraciones y momentos espontáneos.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -4939,7 +4939,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet Gerberas: arreglo elaborado con gerberas de aspecto fresco y colorido que aportan vitalidad. Ideal para regalar en ocasiones románticas, reuniones familiares o cualquier momento que merezca un detalle bonito.",
+    description: "Bouquet Gerberas: arreglo elaborado con gerberas rosas de aspecto fresco y colorido que aportan vitalidad. Ideal para regalar en ocasiones románticas, reuniones familiares o cualquier momento que merezca un detalle bonito.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -5055,7 +5055,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet Girasol y Rosas: arreglo elaborado con girasoles de tonos luminosos que transmiten alegría y energía. Ideal para regalar en ocasiones románticas, reuniones familiares o cualquier momento que merezca un detalle bonito.",
+    description: "Bouquet Girasol y Rosas: arreglo elaborado con girasoles y rosas de tonos luminosos que transmiten alegría y energía. Ideal para regalar en ocasiones románticas, reuniones familiares o cualquier momento que merezca un detalle bonito.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
