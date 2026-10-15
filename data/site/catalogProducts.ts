@@ -1075,7 +1075,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     categoryId: "combinados",
 
-    baseTitle: "Bouquet armenia elegante",
+    baseTitle: "Bouquet Armonia Elegante",
 
     subtitle: "",
 
@@ -1137,7 +1137,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet armenia elegante: arreglo elaborado con una combinación floral armoniosa con una presentación especial. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
+    description: "Bouquet Armonia Elegante: arreglo elaborado con una combinación floral armoniosa con una presentación especial. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -2112,7 +2112,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     categoryId: "combinados",
 
-    baseTitle: "Lirios para mi delfino",
+    baseTitle: "Lirios para mi Delirio",
 
     subtitle: "",
 
@@ -2174,7 +2174,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Lirios para mi delfino: arreglo elaborado con lirios de presencia elegante que aportan delicadeza al arreglo. Una propuesta floral para demostrar cariño, celebrar logros o convertir un día cotidiano en una ocasión especial.",
+    description: "Lirios para mi Delirio: arreglo elaborado con lirios de presencia elegante que aportan delicadeza al arreglo. Una propuesta floral para demostrar cariño, celebrar logros o convertir un día cotidiano en una ocasión especial.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
@@ -2917,7 +2917,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     categoryId: "rosas",
 
-    baseTitle: "Bouquet lunes infinito",
+    baseTitle: "Bouquet Lirios Infinito",
 
     subtitle: "",
 
@@ -2979,7 +2979,7 @@ export const catalogProducts: CatalogProduct[] = [
 
     deliveryMessage: "",
 
-    description: "Bouquet lunes infinito: arreglo elaborado con una combinación floral armoniosa con una presentación especial. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
+    description: "Bouquet Lirios Infinito: arreglo elaborado con una combinación floral armoniosa con una presentación especial. Es una opción ideal para cumpleaños, aniversarios, agradecimientos o para sorprender a alguien importante.",
     includes: [
       "Decoración, moño y envoltura similares a la imagen",
       "Tarjeta para escribir dedicatoria",
