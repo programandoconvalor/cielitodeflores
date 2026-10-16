@@ -490,7 +490,7 @@ export default function Footer() {
               }}
             >
               <p className="min-w-0 break-words">
-                {bottomSection.copyrightPrefix} © {year}
+                {bottomSection.copyrightPrefix} © {year} Versión 1.1.1
               </p>
 
               {bottomSection.showDeveloperLink &&

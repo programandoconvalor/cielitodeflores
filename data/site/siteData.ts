@@ -921,7 +921,7 @@ export const siteData = {
         enabled: true,
         whatsappBase: "https://wa.me/5217227914217",
         messageTemplate:
-          "Hola vi el catálogo: {{businessName}} y estoy interesado en configurar el ",
+          "Hola vi el catálogo: {{businessName}} y estoy interesado en saber más sobre sus servicios y productos.",
       },
     },
   },

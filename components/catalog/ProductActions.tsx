@@ -63,7 +63,7 @@ export default function ProductActions({
         ? new URL(imageUrl, origin).href
         : imageUrl;
 
-    lines.push("", `Imagen del producto: ${absoluteImageUrl}`);
+    lines.push("", `Imagen: ${absoluteImageUrl}`);
   }
 
   const message = lines.join("\n");
