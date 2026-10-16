@@ -59,7 +59,7 @@ export const siteData = {
   description:
     "Flores personalizadas, arreglos florales, rosas, girasoles, gerberas. Entregas en San Mateo Atenco, Metepec, Lerma, Toluca y alrededores. Realiza tu pedido por WhatsApp.",
   
-  canonical: "https://cielitodefloresvip.vercel.app",
+  canonical: "https://cielitodeflores.vercel.app",
   robots: {
     index: true,
     follow: true

@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -116,6 +117,13 @@ export default function ProductCard({
   const showBadge = Boolean(product.badgeLabel || product.badge);
   const badgeText = product.badgeLabel || product.badge || "EXCLUSIVO";
 
+  const selectedSizeLabel = selectedSize
+    ? product.productSizes?.find((size) => size.id === selectedSize)?.label ??
+      selectedSize
+    : undefined;
+
+  const activeImageUrl = product.defaultImages?.[activeImageIndex];
+
   return (
     <article
       className="
@@ -147,6 +155,7 @@ export default function ProductCard({
                 fill="currentColor"
               />
             </svg>
+
             <span>{badgeText}</span>
           </div>
         </div>
@@ -196,7 +205,12 @@ export default function ProductCard({
                       aria-selected={active}
                       aria-pressed={active}
                       onClick={() => setSelectedSize(size.id)}
-                      className="min-h-[32px] rounded-full px-1 text-[8px] font-medium uppercase tracking-[0.04em] transition-all duration-200 sm:min-h-[38px] sm:px-2 sm:text-[10px]"
+                      className="
+                        min-h-[32px] rounded-full px-1 text-[8px]
+                        font-medium uppercase tracking-[0.04em]
+                        transition-all duration-200
+                        sm:min-h-[38px] sm:px-2 sm:text-[10px]
+                      "
                       style={{
                         color: active ? "#EC5F8C" : "#64748B",
                         border: active
@@ -246,13 +260,10 @@ export default function ProductCard({
             <ProductActions
               sku={product.sku}
               title={product.baseTitle}
-              selectedSize={
-                selectedSize
-                  ? product.productSizes?.find(
-                      (size) => size.id === selectedSize,
-                    )?.label ?? selectedSize
-                  : undefined
-              }
+              price={priceToShow}
+              fallbackPrice={product.basePriceMxn}
+              selectedSize={selectedSizeLabel}
+              imageUrl={activeImageUrl}
             />
           </div>
         </div>
